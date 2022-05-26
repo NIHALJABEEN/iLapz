@@ -13,7 +13,7 @@ class Datasource{
 
   Future<Null> fetchDataFromApi() async{
 
-    final responseData = await http.get("http://www.mocky.io/v2/5d565297300000680030a986");
+    final responseData = await http.get("https://www.mocky.io/v2/5d565297300000680030a986");
 
     if(responseData.statusCode == 200){
       final data = jsonDecode(responseData.body);
